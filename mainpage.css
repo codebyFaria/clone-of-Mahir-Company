@@ -1,0 +1,1182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+  
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width: 25%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .ul li{
+        display: inline-block;
+        padding-left: 20px;
+    }
+    .ul li a{
+        text-decoration: none;
+        font-size: 20px;  
+        color: #8e8e93;  
+    }
+    .submenu{
+        position: absolute;
+        top: 5rem;
+        height: 240px;
+        width: 17%;
+        border-radius: .25rem;
+        border: 1px solid rgba(0, 0, 0, .15);
+        padding: .5rem 0;
+        z-index: 1;
+        background-color: #fff;
+        color:#8e8e93; ;
+        visibility: hidden;
+    }
+    .submenu li{
+      padding: 0.4rem
+    }
+
+    #city-selector{
+        /* width: 9rem; */
+        padding: 8px 27px;
+        border-radius: 10px;
+        border:none;
+        color: #0f52ba;
+        font-size: 15px;
+        background-color:#d9d9e1;   ;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 23px; /* Adjust padding as needed */
+        background-color: #0f52ba; /* Change color as needed */
+        color: #fff; /* Text color */
+        border: none;
+        border-radius: 20px; /* Adjust the value to control the roundness */
+        cursor: pointer;
+        font-size: 17px;
+        margin-left: 6px;
+    }
+
+
+    .heroSection{
+        display: flex;
+        flex-direction: row;
+        background-color:#f6f6f6;
+        height: 700px;
+        border-radius: 0px 0px 40px 40px;
+        margin: 1% 1%;
+      
+        
+    }
+
+    .container1{
+      
+        width: 40%;
+       
+    }
+
+    .container {
+        width: 60%;
+        height: 700px;
+        position: relative;
+        overflow: hidden; /* Ensure overflow is hidden to control image transition */
+        clip-path: ellipse(446px 536px at 71% 51%);
+      }
+      .Popupcontainer {
+        width: 23%;
+        height: 300px;
+        background-color: #fff ;
+        display: flex;
+        position: absolute;
+        top: 17rem;
+        left: 35rem;
+        z-index: 1;
+        opacity: 1;
+        visibility: hidden;
+    }
+    .close {
+      position: absolute;
+      right: 5px;
+      font-size: 1.5rem;
+    }
+    .Popupcontainer form input {
+    height: 2rem;
+    border-radius: 10px;
+    padding-left: 0.7rem;
+  }
+   form h4 {
+    margin: 2rem 0rem 1rem 0rem;
+  }
+  .send button{
+    display: inline-block;
+    padding:7px 20px; /* Adjust padding as needed */
+    background-color:#0f52ba ;/* Change color as needed */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 12rem;
+  }
+      
+      .container img {
+        display: none;
+        width: 120%;
+        height: 700px;
+     overflow: hidden;
+        position: absolute;
+        left: 100%; /* Start the image from the right side */
+        animation: slideLeft 0.9s forwards; /* Apply animation to slide from right to left */
+      }
+      
+      @keyframes slideLeft {
+        from {
+          left: 100%; /* Start position is all the way to the right */
+        }
+        to {
+          left: 0; /* End position is at the left edge */
+        }
+      }
+      
+      .active img {
+        display: block;
+      }
+      
+      .dots-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+      }
+      
+      .dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 11px 20px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s;
+      }
+      
+      .dot:hover {
+        background-color: #b75d5d;
+      }
+      
+      .dots-container .activeDot {
+        background-color: rgb(212, 102, 80);
+      }
+
+      .heroText{
+        margin: 12%;
+
+      }
+
+      .bold{
+        font-size: 4rem;
+        font-weight: 900;
+        color: #0f52ba;
+      }
+      .herodetail{
+        color: #000;
+        letter-spacing: .4px;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+      }
+
+      .herobutton{
+        display: inline-block;
+        padding: 14px 25px; /* Adjust padding as needed */
+        background-color: #0f52ba; /* Change color as needed */
+        color: #fff; /* Text color */
+        border: none;
+        border-radius: 15px; /* Adjust the value to control the roundness */
+        cursor: pointer;
+        font-size: 17px;
+        margin-left: 6px;
+
+      }
+      .icon{
+        background-color: #fff;
+        color: #0f52ba;
+        padding: 6px 12px;
+        margin: 2%;
+         border: none;
+         font-size:30px;
+         border-radius: 15px;
+         cursor: pointer;
+
+      }
+ 
+      .hidden {
+        display: none;
+      }
+      
+      .search {
+        width: 40rem;
+        padding: 1.3rem;
+        border-radius: 10px;
+        margin-top: 5%;
+        border-color: #0f52ba;
+      }
+      
+      #searchResults1 {
+        height: 130px; /* Adjust the height as needed */
+        overflow-y: auto;
+        width: 140%;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .SearchServices li {
+        list-style-type: none;
+      }
+      
+      .servic {
+        margin-bottom: 5px;
+      }
+      
+      .servic a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+      
+      .servic a:hover {
+        color: #000;
+      }
+      
+
+
+      .ServiceSection{
+        width: 100%;
+        height: 500px;
+        margin-top: 2rem;
+       
+      }
+
+      .ServiceSection h1{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+      
+      }
+      .Stext{
+        text-align: center;
+      }
+
+      .service-cards{
+        margin-bottom: 1rem;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-left: 8rem;
+        margin-right: 6rem;
+      }
+
+      .service-cards li{
+      list-style-type: none;
+      padding: 3rem;
+     } 
+
+     .service-cards li p{
+     font-size: 1.4rem;
+     } 
+    
+
+.sc-item  {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px
+} 
+
+.section-4{
+  
+  height: 400px;
+  margin: 7rem;
+  margin-top: 0;
+  background-color:#f6f6f6; 
+  border-radius: 10px;
+  padding: 25px 16px;
+  
+}
+.line{
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.subcontainer1{
+  width: 50%;
+  margin: 5rem;
+}
+
+.ts{
+color: #0f52ba;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.subcontainer1 h2{
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  }
+
+  .section-4Text{
+    color:#777474;
+    line-height: 1.5rem;
+  }
+  .subcontainer2{
+    width: 70%;
+    overflow: hidden;
+  }
+
+  .AllCards{
+    display: flex;
+    gap: 1rem;
+    margin-right: 6rem;
+
+  }
+  .card{
+    display: none;
+    flex-direction: column;
+    background-color: #0f52ba;
+    width: 50%;
+    gap: 0.5rem;
+    border-radius: 10px;
+    position: relative; /* Add position relative */
+    animation: cardSlide 0.9s forwards; /* Apply animation to slide from right to left */
+  }
+  
+  @keyframes cardSlide {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateX(100%); /* Start position is all the way to the right */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateX(0); /* End position is at the left edge */
+    }
+  }
+  
+  
+  .active{
+    display: block;
+  }
+  .cardimg{
+    background: #fff;
+    width: 90%;
+    height: 175px;
+    border-radius: 10px;
+    margin: 1rem 2rem 1rem 0.8rem;
+  }
+  .cardimg img{
+   width: 100%;
+   height: 100%;
+  }
+  .card h4{
+   color: #fff;
+   margin: 0rem 1rem 0.5rem 1rem;
+   font-size: 1.5rem;
+  }
+.star{
+  display: flex;
+ width: 20%;
+ background-color: #fff;
+ border-radius: 10px;
+ margin: 0rem 1rem 0.5rem 1rem;
+ padding: 0.2rem;
+
+}
+.star li{
+  list-style-type: none;
+  color: rgb(223, 188, 29);
+  
+}
+
+.price{
+  color:#fff;
+  margin: 0rem 0rem 1rem 1rem;
+}
+.Alldots-section-4{
+  display: flex;
+  justify-content: center;
+ 
+}
+.section-4-dot{
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin:  8px 3px 0px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s;
+}
+.section-4-dot:hover{
+  background-color: #0f52ba;
+}
+.activeSection-4dot{
+  background-color: #0f52ba;
+}
+
+           /* section-4 has end */
+
+
+   /* Section-5 */
+
+   .section-5{
+  
+    height: 600px;
+    margin: 0 8rem;
+    display: flex;
+    
+  }
+
+  .sec5container1{
+    width: 50%;
+  }
+
+  .sec5container2{
+    width: 50%;
+   margin-left: 4rem;
+  }
+  .featuredlist p{
+    color: #0f52ba;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .items li{
+    list-style-type: none;
+    display: flex;
+    gap: 1.3rem;
+   margin-top: 2rem;
+   font-size: 1.3rem;
+    
+  }
+  #download-apps{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+  }
+
+  #apple,
+#google {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  gap: 1rem;
+  width:100%;
+}
+
+#apple i,
+#google i {
+  color: #000000;
+  font-size: 38px;
+}
+
+           /* section-5 has ended */
+
+           /* section-6 is start */
+
+  .full-video {
+    position: relative;
+    max-width: 1920px;
+    margin: 4rem 7rem;
+    overflow: hidden;
+    height: 600px;
+}
+.thumbnail-container {
+  position: relative;
+}
+
+.thumbnail-container img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+}
+.full-video iframe{
+  width: 100%;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px; /* Adjust size as needed */
+  height: 90px; /* Adjust size as needed */
+  background-image: url('images/play-button.png'); /* Replace with your play button icon */
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* section 7 */
+
+.section-7{
+  margin: 7rem;
+  height: 450px;
+  margin-top: 0;
+  background-color:#f6f6f6; 
+  border-radius: 10px;
+  padding: 25px 16px;
+  
+}
+
+.subcontainer7-1{
+  width: 40%;
+  margin-top: 11rem;
+}
+
+.subcontainer7-2{
+  background-color: #fff;
+  width: 60%;
+  margin: 3rem 7rem 7rem 0rem;
+  border-radius: 16px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem 2rem 2rem;
+  
+}
+.fields2 input{
+  width: 15rem;
+  height: 40px;
+  border-radius: 8px;
+  margin: 9px;
+  padding-left: 5px;
+}
+.form textarea{
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-top: 10px;
+  
+}
+.submit button{
+  display: inline-block;
+  padding: 13px 73px; /* Adjust padding as needed */
+  background-color:#0f52ba; /* Change color as needed */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 10px; /* Adjust the value to control the roundness */
+  cursor: pointer;
+  font-size: 17px;
+  margin-left: 20rem;
+}
+
+
+/* section 8 */
+
+.container-8{
+  margin: 7rem 7rem 0rem 7rem;
+  height: 400px;
+  margin-top: 0;
+  background-color:#f6f6f6; 
+  border-radius: 10px;
+  padding: 25px 16px;
+ 
+  
+}
+ 
+.Allservices{
+      margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-left: 1rem;
+        margin-right: 2rem;
+}
+.container-8 h2{
+  margin: 2rem 0rem 0rem 2rem;
+  font-size: 2rem;
+}
+
+ .Allservices li{
+  list-style-type: none;
+  padding: 9px;
+} 
+
+
+.Allservices li a{
+ 
+ border: 1px solid#333;
+ text-decoration: none;
+ color:#333;
+ border-radius: 15px;
+ padding: 0.5rem;
+ font-size: 1.3rem;
+
+} 
+
+
+.section-9{
+  width: 100%;
+  height: 400px;
+}
+.container9{
+ margin: 2rem;
+
+}  
+.container9 h1{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+ 
+}  
+.box9{
+  display: flex;
+  gap: 1rem;
+}   
+.Subcontainer9 {
+ padding: 3rem;
+ background-color:#fff;
+ width: 30%;
+ border-radius: 10px;
+ display: flex;
+flex-direction: column;
+ gap: 1rem;
+ border: 3px solid  #0f52ba ;
+ animation: 3s slide infinite linear;
+}   
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.dateRating{
+  display: flex;
+  justify-content: space-between;
+}
+.rating {
+color: #0f52ba;
+font-size: 1.5rem;
+}
+.profil span{
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.profil i{
+ font-size: 2rem;
+}
+
+.Subcontainer9 p {
+  color: #a4a4b1;
+ } 
+
+ /* Last-Section */
+
+ .bottomNavigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 115px;
+  background-color: #fff; /* Change this to your desired background color */
+  padding: 10px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.bottom {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style for each navigation item */
+ .BElement {
+  display: flex;
+  flex-direction: column;
+  color: #1d1d1d; /* Change this to your desired text color */
+  text-align: center;
+  flex: 1;
+}
+.BElement span {
+font-size: 1.7rem;
+}
+
+/* Style for navigation icons */
+.nav__icon {
+  font-size: 51px; /* Change this to adjust icon size */
+} 
+
+ @media screen and (max-width: 2560px) {
+  .container-2{
+    display: none;
+  }
+  .subcontainer3{
+    display: none;
+  }
+  .subcontainer7-3{
+    display: none;
+  }
+  .Last-Section{
+    display: none;
+  }
+  #Mnav{
+    display: none;
+  }
+ }
+
+ @media screen and (min-width:790px) and (max-width: 1024px) {
+   
+#navbar{
+  height: 75px;
+}
+.logo {
+  width: 20%;
+}
+.logo img{
+  width: 35%;
+}
+.nav {
+  width: 90%;
+}
+
+.container {
+  clip-path: ellipse(345px 498px at 74% 57%);
+}
+.heroText {
+ 
+  margin: 7rem 0rem 0rem 4rem;
+}
+.bold {
+  font-size: 2.8rem;
+}
+.herodetail{
+margin: 1rem 0rem 1rem 0rem;
+font-size: 20px;
+}
+
+.search {
+    width: 21rem;
+    padding: 1rem;
+    margin-top: 8%;
+}
+
+.ServiceSection {
+  height: 533px;
+}
+.service-cards {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px; 
+  justify-content:none;
+  margin-left: 1.5rem;
+   margin-right: 0rem;
+}
+.service-cards li {
+  padding: 1.9rem;
+}
+.section-4 {
+  margin: 2rem;
+}
+.AllCards {
+  margin-right: 4.5rem;
+}
+.card h4 {
+  font-size: 1.2rem;
+}
+.star {
+  width: 23%;
+}
+.section-5 {
+  margin: 0 4rem;
+}
+.sec5container1 img {
+  width: 100%;
+  height: 100%;
+}
+.full-video {
+  margin: 4rem 2rem;
+}
+.section-9 {
+  height: 450px;
+}
+.section-7 {
+    margin: 3rem 1rem 3rem 1rem
+}
+.subcontainer7-2 {
+  margin: 1rem 2rem 2rem 0rem;
+}
+.fields2 input {
+  width: 12rem;
+}
+.form {
+  padding: 4rem 1rem 1rem 1rem;
+}
+.submit button {
+  margin-left: 15rem;
+}
+.container-8 {
+  margin: 0rem 1rem 0rem 1rem;
+}
+ }
+
+ @media screen and (max-width: 789px) {
+  #navbar {
+    width: 117%;
+  }
+  .heroSection {
+    flex-direction: column;
+    margin-left: 1.8rem;
+    margin-right: -1rem;
+    width: 124%;
+    height:900px;
+  }
+  .Popupcontainer {
+    width: 75%;
+    left: 10rem;
+    height: 389px;
+    
+  }
+  form h4 {
+    font-size: 1.5rem;
+  }
+  .form {
+    gap: 1rem;
+    padding: 4rem 2rem 2rem 6rem;
+}
+  .Popupcontainer form input {
+
+    height: 2.5rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+.send button {
+  margin-left: 16rem;
+  padding: 12px 41px;
+  font-size: 1.5rem;
+}
+  .container1{
+    display: none;
+  }
+  .container-2{
+    display: block;
+    margin: auto;
+    width: 27%;
+  }
+  .container {
+    width: 100%;
+    clip-path: none;
+}
+.search {
+  width: 22rem;
+  padding: 1rem;
+  margin-left: -6rem
+}
+#searchResults2 {
+  height: 130px; /* Adjust the height as needed */
+  overflow-y: auto;
+  position: relative;
+  left: -6rem;
+  width: 138%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.ServiceSection {
+  height: 700px;
+  width: 131%;
+}
+.service-cards {
+  gap: 12px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 0rem;
+}
+.service-cards li {
+  box-shadow: 0 4px 10px rgb(0, 0, 0, .1);
+}
+.section-4 {
+  width: 125%;
+  height: 567px;
+  margin: 13px -1.3rem 2rem 1.5rem;
+}
+.line{
+  flex-direction: column;
+}
+.subcontainer1{
+  display: none;
+}
+.subcontainer3{
+  display: block;
+  margin: 1rem;
+}
+.subcontainer2 {
+  margin-left: 10rem;
+}
+.section-5{
+  display: none;
+}
+.section-6{
+display: none;
+}
+.Subcontainer9 {
+  padding: 1.2rem;
+}
+.profil span {
+  margin: 0.3rem;
+}
+.subcontainer7-3{
+  display: block;
+  margin: 1rem;
+}
+.section-7 {
+  margin: 0rem 0rem 2rem 1.3rem;
+  height: 560px;
+  width: 125%;;
+}
+.subcontainer7-2{
+  width: 90%;
+  margin: 3rem 0rem 11rem 2.3rem;
+}
+.fields2 input {
+  width: 37rem;
+  margin: 10px;
+}
+.container-8 {
+    width: 125%;
+    margin: 7rem 0rem 0rem 1.5rem;
+}
+.Allservices li a {
+  font-size: 1rem;
+}
+.section-8 {
+  width: 111%;
+ }
+.section-9 {
+  width: 131%;
+ }
+}
+ @media screen and (max-width: 426px) { 
+  .heroSection {
+    width: 250%;
+    height: 1000px;
+  }
+  .herobutton {
+    padding: 30px 75px;
+    margin-top: 2rem;
+    font-size: 29px;
+    margin-left: 0;
+  }
+  .Con2Buttons{
+    display: flex;
+    margin-left: -5rem;
+  }
+  .icon {
+  
+    padding: 28px 40px;
+    margin-top: 12%;
+    margin-left:3% ;
+    border: 2px solid #0f52ba;
+    font-size: 54px;
+}
+.search {
+  width: 60rem;
+  padding: 2.3rem;
+  margin-left: -23rem;
+  font-size: 2rem;
+  border-radius: 29px;
+}
+  .Popupcontainer {
+    width: 184%;
+    left: 10rem;
+    height: 450px;
+  }
+  form h4 {
+    font-size: 2rem;
+  }
+  .form {
+    gap: 2rem;
+    padding: 4rem 2rem 2rem 9rem;
+}
+  .Popupcontainer form input {
+    height: 5rem;
+    border-radius: 10px;
+    padding-left: 1.7rem;
+    font-size: 2rem;
+}
+.send button {
+  margin-left: 24rem;
+  padding: 12px 41px;
+  font-size: 2rem;
+}
+    
+  .ServiceSection {
+    height: 2000px;
+    margin-top: 8rem;
+}
+ 
+  .ServiceSection h1 {
+    margin-left: 22rem;
+    font-size: 6rem;  
+  }
+  .service-cards {
+    width: 177%;
+    gap: 38px;
+}
+.service-cards li {
+  padding: 5rem 8rem 4rem 8rem;
+}
+.sc-item img{
+  width:165%
+}
+.service-cards li p {
+  font-size: 2rem;
+}
+.Stext {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+   width: 196%;
+ 
+}
+.section-4 {
+ width: 228%;
+  height: 622px
+}
+.section-9 {
+ width: 239%;
+}
+.section-9 .nav{
+  display: none;
+}
+.Subcontainer9 {
+  width: 100%;
+}
+.section-7{
+  width: 230%;
+  height: 800px;
+}
+.fields2 input {
+  width: 32rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+.form textarea {
+  height: 9rem;
+  font-size: 2rem;
+ 
+}
+.container-8 {
+  width: 229%;
+ height: 1200px;
+}
+.container-8 h2 {
+  font-size: 3rem;
+}
+.Allservices {
+  flex-direction: column;
+}
+.Allservices li  {
+  padding: 12px;
+}
+.Allservices li a {
+  font-size: 2.3rem;
+}
+.section-4Text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+nav{
+  display: none;
+}
+.Last-Section{
+  display: block;
+}
+#Mnav{
+  display: flex;
+  height: 144px;
+  width: 225%;
+  align-items: center;
+}
+.Mlogo{
+  width: 22%;
+  margin-left: 2rem;
+}
+.Mlogo img{
+  width: 100%;
+}
+.Msubnav{
+  width: 75%;
+}
+.Msubnav ul{
+ display: flex;
+ margin-left: 14rem;
+ justify-content: space-between;
+}
+.Msubnav ul li{
+  list-style-type: none; 
+ }
+ #Mnav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 900;
+ }
+ #Icon{
+  font-size: 5rem;
+  color: #0f52ba;
+  font-weight: 900;
+ }
+
+ }
+
+ @media screen and (max-width: 320px) { 
+  .ServiceSection {
+    height: 4100px;
+}
+.heroSection {
+  width: 263%;
+}
+ }
